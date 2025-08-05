@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a
+      href="https://linkhub-hugo.vercel.app/"
+      target="_blank"
+      class="logo-link"
+    >
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8YP1lYkpThq3z9ApfrAN0zZJiE3vcnOT5oIkZweCArZnREMGY-AmUGkXz_SDR8EiUzJo&usqp=CAU"
+        alt="LinkHub Logo"
+        class="logo-img"
+      />
+    </a>
+    <div class="container">
+      <h1>ToDo App</h1>
+      <p>Manage Your ToDo List!</p>
+
+      <div class="form">
+        <input type="text" id="taskInput" placeholder="Add a ToDo..." />
+        <input type="date" id="dateInput" />
+        <button id="addBtn">+</button>
+      </div>
+
+      <div class="controls">
+        <select id="filterBtn">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="pending">Pending</option>
+        </select>
+        <button id="deleteAllBtn">Clear</button>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Task</th>
+            <th>Due Date</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="taskTableBody">
+          <tr>
+            <td colspan="4">No task found</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

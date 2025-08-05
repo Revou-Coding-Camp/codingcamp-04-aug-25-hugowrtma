@@ -1,0 +1,165 @@
+body {
+  background-image: url("https://media.istockphoto.com/id/498478219/photo/stars-at-night-sky.jpg?s=612x612&w=0&k=20&c=M_XD9zraaC1-1Wbvxk5XMU_Qwc5Lwsi7YbSmYbCoXi4=");
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.logo-link {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.logo-img {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.1);
+}
+
+.container {
+  background-color: #494E5B;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #F5F1ED;
+}
+
+p {
+  text-align: center;
+  color: #F5F1ED;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+input[type="text"],
+input[type="date"] {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #f2f2f2;
+  color: #333;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]::placeholder, 
+input[type="date"]::placeholder {
+  color: #222;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus {
+  outline: none;
+  border-color: #70798C;
+  background-color: #A8A9AD;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #DAD2BC;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #222;
+  font-weight: bolder;
+}
+
+button:hover {
+  background-color: #A8A9AD;
+}
+
+#filterBtn {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: #DAD2BC;
+  color: #222;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='black'%20viewBox='0%200%2016%2016'%3E%3Cpath%20fill-rule='evenodd'%20d='M1.5%205.5l6%206%206-6z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  background-size: 1rem;
+  padding-right: 2rem;
+}
+
+#filterBtn:hover {
+  background-color: #A8A9AD;
+}
+
+.btn-complete {
+  background-color: #799FCB;
+}
+
+.btn-complete:hover {
+  background-color: #5A7BBE;
+}
+
+.btn-delete {
+  background-color: #F9665E;
+}
+
+.btn-delete:hover {
+  background-color: #D44A3F;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color:#D3E4EA;
+  color: black;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+}
+
+th, td {
+  padding: 0.5rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+th {
+  background-color: #F5F1ED;
+  color: #252323;
+  font-weight: bolder;
+  border-bottom: 2px solid #A8A9AD;
+}
+
+td {
+  background-color: #DAD2BC;
+  color: #252323;
+}
