@@ -1,4 +1,3 @@
-/* ======== GLOBAL ======== */
 body {
   background-color: #283040;
   font-family: 'Segoe UI', sans-serif;
@@ -6,10 +5,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
   margin: 0;
-  padding: 1rem;
-  box-sizing: border-box;
 }
 
 .logo-link {
@@ -31,20 +28,17 @@ body {
   transform: scale(1.2);
 }
 
-/* ======== CONTAINER ======== */
 .container {
   background-color: #3a4252;
   padding: 2rem;
   border-radius: 16px;
-  width: 100%;
+  width: 90%;
   max-width: 600px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.04);
-  box-sizing: border-box;
 }
 
-/* ======== TEXT ======== */
 h1 {
   text-align: center;
   color: #F5F1ED;
@@ -66,12 +60,10 @@ p {
   font-weight: 400;
 }
 
-/* ======== FORM ======== */
 .form {
   display: flex;
   gap: 0.5rem;
   margin-bottom: 1rem;
-  flex-wrap: wrap;
 }
 
 input[type="text"],
@@ -84,10 +76,9 @@ input[type="date"] {
   color: #333;
   border: 1px solid #ccc;
   transition: all 0.3s ease;
-  box-sizing: border-box;
 }
 
-input[type="text"]::placeholder,
+input[type="text"]::placeholder, 
 input[type="date"]::placeholder {
   color: #222;
 }
@@ -99,8 +90,7 @@ input[type="date"]:focus {
   background-color: #A8A9AD;
 }
 
-button,
-#filterBtn {
+button {
   padding: 0.5rem 1rem;
   background-color: #DAD2BC;
   border: none;
@@ -108,23 +98,31 @@ button,
   cursor: pointer;
   color: #222;
   font-weight: bolder;
-  transition: background-color 0.3s ease;
 }
 
-button:hover,
-#filterBtn:hover {
+button:hover {
   background-color: #B8B09C;
 }
 
-/* Custom filter button icon */
 #filterBtn {
   appearance: none;
   -webkit-appearance: none;
+  background-color: #DAD2BC;
+  color: #222;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
   background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='black'%20viewBox='0%200%2016%2016'%3E%3Cpath%20fill-rule='evenodd'%20d='M1.5%205.5l6%206%206-6z'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 0.5rem center;
   background-size: 1rem;
   padding-right: 2rem;
+}
+
+#filterBtn:hover {
+  background-color: #B8B09C;
 }
 
 .btn-complete {
@@ -140,36 +138,29 @@ button:hover,
 }
 
 .btn-delete:hover {
-  background-color: #B23A2B;
+  background-color:#B23A2B;
 }
 
-/* ======== CONTROLS ======== */
 .controls {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 0.5rem;
   margin-bottom: 1rem;
-}
-
-/* ======== TABLE ======== */
-.table-container {
-  overflow-x: auto;
-  border-radius: 6px;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  background-color: #D3E4EA;
+  background-color:#D3E4EA;
   color: black;
   border-radius: 5px;
+  overflow: hidden;
+  margin: 0 auto;
   text-align: center;
-  min-width: 550px; /* fix for narrow mobile */
 }
 
 th, td {
   padding: 0.5rem;
+  text-align: center;
   vertical-align: middle;
 }
 
@@ -184,60 +175,4 @@ td {
   background-color: #283040;
   color: #F5F1ED;
   border: 1px solid #70798C;
-}
-
-/* ======== MEDIA QUERY: RESPONSIVE ======== */
-@media (max-width: 600px) {
-  .container {
-    padding: 1.5rem 1rem;
-    width: 100%;
-    border-radius: 12px;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-  }
-
-  p {
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
-  }
-
-  .form {
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-
-  input[type="text"],
-  input[type="date"],
-  button,
-  #filterBtn {
-    width: 100%;
-    padding: 0.6rem;
-    font-size: 0.95rem;
-  }
-
-  .controls {
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-
-  .logo-link {
-    top: 10px;
-    right: 10px;
-  }
-
-  .logo-img {
-    width: 20px;
-    height: 20px;
-  }
-
-  table {
-    font-size: 0.8rem;
-  }
-
-  th, td {
-    padding: 0.4rem;
-  }
 }
