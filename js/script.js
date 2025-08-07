@@ -14,7 +14,7 @@ function saveToLocalStorage() {
 function renderTasks(list = tasks) {
   taskTableBody.innerHTML = '';
   if (list.length === 0) {
-    taskTableBody.innerHTML = '<tr><td colspan="4">No task found</td></tr>';
+    taskTableBody.innerHTML = '<tr><td colspan="5">No task found</td></tr>';
     return;
   }
 
