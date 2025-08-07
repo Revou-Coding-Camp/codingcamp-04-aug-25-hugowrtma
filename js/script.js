@@ -18,15 +18,17 @@ function renderTasks(list = tasks) {
     return;
   }
 
-  list.forEach((task, index) => {
+  list.forEach((task, displayIndex) => {
+    const actualIndex = tasks.indexOf(task); // needed for correct toggle/delete actions
     const row = document.createElement('tr');
     row.innerHTML = `
+      <td>${displayIndex + 1}</td>
       <td>${task.name}</td>
       <td>${task.date}</td>
-      <td>${task.completed ? 'Completed' : 'Pending'}</td>
+      <td>${task.completed ? 'Completed' : 'On Going'}</td>
       <td>
-        <button class="btn-complete" onclick="toggleComplete(${index})">✔</button>
-        <button class="btn-delete" onclick="deleteTask(${index})">🗑</button>
+        <button class="btn-complete" onclick="toggleComplete(${actualIndex})">✔</button>
+        <button class="btn-delete" onclick="deleteTask(${actualIndex})">🗑</button>
       </td>
     `;
     taskTableBody.appendChild(row);

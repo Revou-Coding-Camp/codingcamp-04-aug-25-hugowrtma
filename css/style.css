@@ -1,5 +1,5 @@
 body {
-  background-image: url("https://media.istockphoto.com/id/498478219/photo/stars-at-night-sky.jpg?s=612x612&w=0&k=20&c=M_XD9zraaC1-1Wbvxk5XMU_Qwc5Lwsi7YbSmYbCoXi4=");
+  background-color: #283040;
   font-family: 'Segoe UI', sans-serif;
   color: #fff;
   display: flex;
@@ -17,35 +17,47 @@ body {
 }
 
 .logo-img {
-  width: 22px;
-  height: 22px;
+  width: 25px;
+  height: 25px;
   cursor: pointer;
   transition: transform 0.2s ease;
+  filter: brightness(0) invert(1);
 }
 
 .logo-img:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .container {
-  background-color: #494E5B;
+  background-color: #3a4252;
   padding: 2rem;
-  border-radius: 10px;
+  border-radius: 16px;
   width: 90%;
   max-width: 600px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.04);
 }
 
 h1 {
   text-align: center;
-  margin-bottom: 1rem;
   color: #F5F1ED;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding-bottom: 0.2rem;
 }
 
 p {
   text-align: center;
-  color: #F5F1ED;
-  margin-bottom: 2rem;
-  font-size: 1.1rem;
+  color: #CFCBC5;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+  letter-spacing: 0.3px;
+  font-weight: 400;
 }
 
 .form {
@@ -89,7 +101,7 @@ button {
 }
 
 button:hover {
-  background-color: #A8A9AD;
+  background-color: #B8B09C;
 }
 
 #filterBtn {
@@ -110,23 +122,23 @@ button:hover {
 }
 
 #filterBtn:hover {
-  background-color: #A8A9AD;
+  background-color: #B8B09C;
 }
 
 .btn-complete {
-  background-color: #799FCB;
-}
-
-.btn-complete:hover {
   background-color: #5A7BBE;
 }
 
+.btn-complete:hover {
+  background-color: #4666A3;
+}
+
 .btn-delete {
-  background-color: #F9665E;
+  background-color: #D44A3F;
 }
 
 .btn-delete:hover {
-  background-color: #D44A3F;
+  background-color:#B23A2B;
 }
 
 .controls {
@@ -153,13 +165,14 @@ th, td {
 }
 
 th {
-  background-color: #F5F1ED;
-  color: #252323;
+  background-color: #283040;
+  color: #F5F1ED;
   font-weight: bolder;
-  border-bottom: 2px solid #A8A9AD;
+  border: 1px solid #70798C;
 }
 
 td {
-  background-color: #DAD2BC;
-  color: #252323;
+  background-color: #283040;
+  color: #F5F1ED;
+  border: 1px solid #70798C;
 }
